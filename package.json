@@ -1,0 +1,23 @@
+{
+  "name": "example-adaptable-aggrid",
+  "version": "1.0.0",
+  "description": "Demo of AdapTable",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@adaptabletools/adaptable": "^10.0.0",
+    "@ag-grid-community/all-modules": "^26.0.0",
+    "@ag-grid-enterprise/all-modules": "^26.0.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "keywords": [],
+  "author": "JonnyAdaptableTools",
+  "license": "MIT",
+  "homepage": "https://github.com/AdaptableTools/example-adaptable-aggrid#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
