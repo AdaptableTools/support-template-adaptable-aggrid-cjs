@@ -1,6 +1,6 @@
 # example-adaptable-aggrid
 
-Demo of AdapTable using Version 10 of AdapTable
+Demo of AdapTable Version 10.
 
 ## Installation
 
