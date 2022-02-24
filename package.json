@@ -8,9 +8,9 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@adaptabletools/adaptable": "^10.0.0",
-    "@ag-grid-community/all-modules": "^26.0.0",
-    "@ag-grid-enterprise/all-modules": "^26.0.0",
+    "@adaptabletools/adaptable": "11.0.0",
+    "@ag-grid-community/all-modules": "27.0.0",
+    "@ag-grid-enterprise/all-modules": "27.0.0",
     "parcel-bundler": "^1.12.4"
   },
   "keywords": [],
