@@ -1,8 +1,8 @@
 # example-adaptable-aggrid
 
-This is a very small sample application that uses AdapTable.
+This is a very basic example of how to get started with Adaptable.
 
-It is designed to allow you to build very small demos for Support purposes.
+It is particularly useful if you wish to build a very small demo for Support purposes.
 
 ## Installation
 
