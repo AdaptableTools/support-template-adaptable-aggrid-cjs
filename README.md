@@ -52,7 +52,7 @@ Please contact [`sales@adaptabletools.com`](mailto:sales@adaptabletools.com) for
 
 Developers can learn how to access AdapTable programmatically at [AdapTable Documentation](https://docs.adaptabletools.com).  
 
-Here you can see a large number of AdapTable demos each showing a different feature, function or option in AdapTable (using dummy data sets).
+Here you can see a large number of AdapTable demos each showing a different feature, function or option in AdapTable.
 
 ## Demo
 
