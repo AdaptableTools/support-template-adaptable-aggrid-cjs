@@ -1,6 +1,8 @@
 # example-adaptable-aggrid
 
-Demo of AdapTable Version 12.
+This is a very small sample application that uses AdapTable.
+
+It is designed to allow you to build very small demos for Support purposes.
 
 ## Installation
 
