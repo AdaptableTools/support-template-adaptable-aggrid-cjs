@@ -1,8 +1,10 @@
 # example-adaptable-aggrid
 
-This is a very basic example of how to get started with Adaptable.
+This is a very basic example of how to get started with Adaptable - the market-leading, low code AG Grid Add-On.
 
 It is particularly useful if you wish to build a very small demo for Support purposes.
+
+It uses v.12.1 of AdapTable and v.27.3 of AG Grid.
 
 ## Installation
 
