@@ -1,6 +1,18 @@
-# example-adaptable-aggrid
+# AdapTable Template
 
-Demo of AdapTable Version 10.
+This is a very basic example of how to get started with AdapTable - the market-leading, low code AG Grid Add-On.
+
+This template is particularly useful if you wish to build a very small demo for Support purposes.
+
+For full information on how to use AdapTable see the [AdapTable Documentation](https://docs.adaptabletools.com).
+
+## Versions and Dependencies
+
+The demo is built using these key packages:
+
+- [Adaptable](https://docs.adaptabletools.com/) version 12.1
+- [AG Grid](https://www.ag-grid.com) version 27.3.0
+
 
 ## Installation
 
@@ -38,22 +50,23 @@ to launch a webserver that serves the generated `dist` folder - now go to [local
 
 ## Licences
 
-A licence for AdapTable provides access to all product features as well as quarterly updates and enhancements through the lifetime of the licence, comprehensive support, and access to all 3rd party libraries.
+An AdapTable Licence provides access to all product features as well as quarterly updates and enhancements through the lifetime of the licence, comprehensive support, and access to all 3rd party libraries.
 
-Licences can be purchased individually, for a team (minimum 30 end-users), for an organisation or for integration into software for onward sale.
+Licences can be purchased individually, for a team, for an organisation or for integration into software for onward sale.
 
-We can make a trial licence available for a short period of time to allow you to try out AdapTable for yourself.
+We can make a Trial Licence available for a short period of time to allow you to try out AdapTable for yourself.
 
 Please contact [`sales@adaptabletools.com`](mailto:sales@adaptabletools.com) for more information.
 
- 
-## Demo
-
-To see AdapTable in action visit our [Demo Site](https://demo.adaptabletools.com).  Here you can see a large number of AdapTable demos each showing a different feature, function or option in AdapTable (using dummy data sets).
-
 ## Help
 
-Developers can learn how to access AdapTable programmatically at [AdapTable Documentation](https://docs.adaptabletools.com).
+Developers can learn how to access AdapTable programmatically at [AdapTable Documentation](https://docs.adaptabletools.com).  
+
+Here you can see a large number of AdapTable demos each showing a different feature, function or option in AdapTable.
+
+## Demo
+
+To see AdapTable in action visit our [Demo Site](https://www.adaptabletools.com/demos) which contains a few larger demos.
 
 ## More Information
 
