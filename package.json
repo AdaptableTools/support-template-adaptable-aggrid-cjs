@@ -8,9 +8,22 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@adaptabletools/adaptable": "12.2.0",
-    "@ag-grid-community/all-modules": "27.3.0",
-    "@ag-grid-enterprise/all-modules": "27.3.0",
+    "@adaptabletools/adaptable": "13.0.0",
+    "@ag-grid-community/core": "28.1.1",
+    "@ag-grid-community/client-side-row-model": "28.1.1",
+    "@ag-grid-enterprise/charts": "28.1.1",
+    "@ag-grid-enterprise/clipboard": "28.1.1",
+    "@ag-grid-enterprise/column-tool-panel": "28.1.1",
+    "@ag-grid-enterprise/excel-export": "28.1.1",
+    "@ag-grid-enterprise/filter-tool-panel": "28.1.1",
+    "@ag-grid-enterprise/menu": "28.1.1",
+    "@ag-grid-enterprise/range-selection": "28.1.1",
+    "@ag-grid-enterprise/rich-select": "28.1.1",
+    "@ag-grid-enterprise/row-grouping": "28.1.1",
+    "@ag-grid-enterprise/server-side-row-model": "^28.1.1",
+    "@ag-grid-enterprise/side-bar": "28.1.1",
+    "@ag-grid-enterprise/sparklines": "28.1.1",
+    "@ag-grid-enterprise/status-bar": "28.1.1",
     "parcel-bundler": "^1.12.4"
   },
   "keywords": [],
@@ -18,6 +31,7 @@
   "license": "MIT",
   "homepage": "https://github.com/AdaptableTools/example-adaptable-aggrid#readme",
   "devDependencies": {
-    "typescript": "^3.8.3"
+    "prettier": "^2.7.1",
+    "typescript": "4.6.4"
   }
 }
