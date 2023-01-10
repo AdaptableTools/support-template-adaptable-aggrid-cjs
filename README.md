@@ -1,4 +1,4 @@
-# AdapTable Template
+# AdapTable (Vanilla) Template
 
 This is a very basic example of how to get started with AdapTable - the market-leading, low code AG Grid Add-On.
 
