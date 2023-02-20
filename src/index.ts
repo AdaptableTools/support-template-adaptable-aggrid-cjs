@@ -5,9 +5,8 @@ import { ColDef, Module } from '@ag-grid-community/core';
 import '@adaptabletools/adaptable/index.css';
 import '@adaptabletools/adaptable/themes/dark.css';
 
-import '@ag-grid-community/core/dist/styles/ag-grid.css';
-import '@ag-grid-community/core/dist/styles/ag-theme-balham.css';
-import '@ag-grid-community/core/dist/styles/ag-theme-balham-dark.css';
+import '@ag-grid-community/styles/ag-grid.css';
+import '@ag-grid-community/styles/ag-theme-balham.css';
 import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model';
 import { ColumnsToolPanelModule } from '@ag-grid-enterprise/column-tool-panel';
 import { MenuModule } from '@ag-grid-enterprise/menu';
