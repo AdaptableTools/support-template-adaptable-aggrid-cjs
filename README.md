@@ -1,4 +1,4 @@
-# AdapTable Template
+# AdapTable (Vanilla) Template
 
 This is a very basic example of how to get started with AdapTable - the market-leading, low code AG Grid Add-On.
 
@@ -12,8 +12,8 @@ For full information on how to use AdapTable see the [AdapTable Documentation](h
 
 The demo is built using these key packages:
 
-- [Adaptable](https://docs.adaptabletools.com/) version 13
-- [AG Grid](https://www.ag-grid.com) version 28.1.1
+- [Adaptable](https://docs.adaptabletools.com/) version 14
+- [AG Grid](https://www.ag-grid.com) version 28.2.0
 
 
 ## Installation
