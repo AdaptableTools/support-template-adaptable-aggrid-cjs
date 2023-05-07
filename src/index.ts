@@ -142,7 +142,7 @@ const columnDefs:ColDef[] = [
   },
   {
     headerName: 'Date manufactured',
-    field: 'date',
+    field: 'year',
     type: 'abColDefDate',
     filter: true,
     floatingFilter: true,
