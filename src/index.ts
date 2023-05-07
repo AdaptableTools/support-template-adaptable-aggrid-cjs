@@ -104,39 +104,68 @@ export const rowData = [
   },
 ];
 
-export const columnDefs: ColDef[] = [
+
+// create AG Grid Column Definitions
+const columnDefs:ColDef[] = [
   {
+    colId: 'id',
+    hide: true,
+    suppressColumnsToolPanel:true,
+    suppressFiltersToolPanel:true
+  },
+  {
+    headerName: 'Auto Make',
     field: 'make',
     editable: true,
+    filter: true,
+    floatingFilter: true,
+    sortable: true,
     type: 'abColDefString',
   },
   {
+    headerName: 'Model',
     field: 'model',
     editable: true,
+    filter: true,
+    floatingFilter: true,
+    sortable: true,
     type: 'abColDefString',
   },
   {
-    field: 'id',
-    editable: true,
-    type: 'abColDefNumber',
-  },
-  {
-    field: 'year',
-    editable: true,
-    type: 'abColDefNumber',
-  },
-  {
-    field: 'rating',
-    editable: true,
-    type: 'abColDefNumber',
-  },
-  {
+    headerName: 'Price',
     field: 'price',
     editable: true,
+    filter: true,
+    floatingFilter: true,
+    sortable: true,
     type: 'abColDefNumber',
+  },
+  {
+    headerName: 'Date manufactured',
+    field: 'date',
+    type: 'abColDefDate',
+    filter: true,
+    floatingFilter: true,
   },
 ];
 
+// build the AdaptableOptions object
+// populate the gridOptions property with the Column Definitions and Row Data created above
+// in this example we are NOT creating any predefined config nor providing any Adaptable Options classes (e.g. filters, entitlements)
+// however in the real world you will set up AdapTable Options to fit your requirements and configure your permissions and remote State
+// you will also provide Predefined Config so that AdapTable ships for first time use with your required objects
+const adaptableOptions: AdaptableOptions = {
+  primaryKey: 'id',
+  userName: 'support user',
+  adaptableId: 'AdapTable Vanilla Support Template',
+  predefinedConfig: {},
+  gridOptions: {
+    columnDefs,
+    rowData,
+  },
+};
+
+// Define the AG Grid Modules required
 const agGridModules: Module[] = [
   ClientSideRowModelModule,
   SideBarModule,
@@ -153,36 +182,7 @@ const agGridModules: Module[] = [
   ClipboardModule,
 ];
 
-const adaptableOptions: AdaptableOptions = {
-  primaryKey: 'id',
-  predefinedConfig: {
-    Dashboard: {
-      Tabs: [
-        {
-          Name: 'primary',
-          Toolbars: ['Layout', 'Alert', 'QuerySearch'],
-        },
-      ],
-    },
-    Shortcut: {
-      Shortcuts: [
-        {
-          Scope: {
-            ColumnIds: ['price'],
-          },
-          ShortcutKey: 'A',
-          ShortcutValue: 10,
-          ShortcutOperation: 'Multiply',
-        },
-      ],
-    },
-  },
-  gridOptions: {
-    columnDefs,
-    rowData,
-  },
-};
-
+// Instantiate AdapTable with Adaptable Options and AG Grid Modules 
 Adaptable.init(adaptableOptions, { agGridModules }).then((api) => {
   console.log(api, '!!!');
 });
