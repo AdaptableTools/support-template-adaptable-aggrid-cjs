@@ -1,6 +1,6 @@
 import { AdaptableOptions } from '@adaptabletools/adaptable/types';
 import Adaptable from '@adaptabletools/adaptable/agGrid';
-import { ColDef, Module } from '@ag-grid-community/core';
+import {ColDef, GridOptions, Module} from '@ag-grid-community/core';
 
 import '@adaptabletools/adaptable/index.css';
 import '@adaptabletools/adaptable/themes/dark.css';
@@ -159,14 +159,15 @@ const adaptableOptions: AdaptableOptions = {
   userName: 'support user',
   adaptableId: 'AdapTable Vanilla Support Template',
   predefinedConfig: {},
-  gridOptions: {
-    columnDefs,
-    rowData,
-  },
 };
 
+const gridOptions:GridOptions = {
+  columnDefs,
+  rowData,
+}
+
 // Define the AG Grid Modules required
-const agGridModules: Module[] = [
+const modules: Module[] = [
   ClientSideRowModelModule,
   SideBarModule,
   ColumnsToolPanelModule,
@@ -183,6 +184,6 @@ const agGridModules: Module[] = [
 ];
 
 // Instantiate AdapTable with Adaptable Options and AG Grid Modules 
-Adaptable.init(adaptableOptions, { agGridModules }).then((api) => {
+Adaptable.init(adaptableOptions, { modules, gridOptions }).then((api) => {
   console.log(api, '!!!');
 });
