@@ -1,10 +1,8 @@
-import { AdaptableOptions } from '@adaptabletools/adaptable/types';
+import { AdaptableOptions, AgGridConfig } from '@adaptabletools/adaptable/types';
 import Adaptable from '@adaptabletools/adaptable/agGrid';
-import {ColDef, GridOptions, Module} from '@ag-grid-community/core';
-
+import { ColDef, GridOptions, Module } from '@ag-grid-community/core';
 import '@adaptabletools/adaptable/index.css';
 import '@adaptabletools/adaptable/themes/dark.css';
-
 import '@ag-grid-community/styles/ag-grid.css';
 import '@ag-grid-community/styles/ag-theme-balham.css';
 import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model';
@@ -104,14 +102,13 @@ export const rowData = [
   },
 ];
 
-
 // create AG Grid Column Definitions
-const columnDefs:ColDef[] = [
+const columnDefs: ColDef[] = [
   {
     colId: 'id',
     hide: true,
-    suppressColumnsToolPanel:true,
-    suppressFiltersToolPanel:true
+    suppressColumnsToolPanel: true,
+    suppressFiltersToolPanel: true,
   },
   {
     headerName: 'Auto Make',
@@ -149,11 +146,10 @@ const columnDefs:ColDef[] = [
   },
 ];
 
-// build the AdaptableOptions object
-// populate the gridOptions property with the Column Definitions and Row Data created above
-// in this example we are NOT creating any predefined config nor providing any Adaptable Options classes (e.g. filters, entitlements)
-// however in the real world you will set up AdapTable Options to fit your requirements and configure your permissions and remote State
-// you will also provide Predefined Config so that AdapTable ships for first time use with your required objects
+// Build the AdaptableOptions object and set primaryKey and adaptableId
+// In this example we are NOT creating any predefined config nor providing any Adaptable Options classes (e.g. filters, entitlements)
+// However in the real world you will set up AdapTable Options to fit your requirements and configure your permissions and remote State
+// You will also provide Predefined Config so that AdapTable ships for first time use with your required objects
 const adaptableOptions: AdaptableOptions = {
   primaryKey: 'id',
   userName: 'support user',
@@ -161,10 +157,11 @@ const adaptableOptions: AdaptableOptions = {
   predefinedConfig: {},
 };
 
-const gridOptions:GridOptions = {
+// Create an AG Grid GridOptions object with the Column Definitions and Row Data created above
+const gridOptions: GridOptions = {
   columnDefs,
   rowData,
-}
+};
 
 // Define the AG Grid Modules required
 const modules: Module[] = [
@@ -183,7 +180,13 @@ const modules: Module[] = [
   ClipboardModule,
 ];
 
-// Instantiate AdapTable with Adaptable Options and AG Grid Modules 
-Adaptable.init(adaptableOptions, { modules, gridOptions }).then((api) => {
-  console.log(api, '!!!');
+// Create an AG Grid Config object which contains AG Grid Grid Options and Modules
+const agGridConfig: AgGridConfig = {
+  modules: modules,
+  gridOptions: gridOptions,
+};
+
+// Asynchronously instantiate AdapTable with Adaptable Options and AG Grid Config
+Adaptable.init(adaptableOptions, agGridConfig).then((api) => {
+  console.log(api);
 });
