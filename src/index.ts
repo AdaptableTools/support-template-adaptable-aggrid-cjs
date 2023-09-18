@@ -188,5 +188,5 @@ const agGridConfig: AgGridConfig = {
 
 // Asynchronously instantiate AdapTable with Adaptable Options and AG Grid Config
 Adaptable.init(adaptableOptions, agGridConfig).then((api) => {
-  console.log(api);
+  api.quickSearchApi.runQuickSearch('toy')
 });
