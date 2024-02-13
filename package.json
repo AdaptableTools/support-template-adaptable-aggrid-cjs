@@ -31,7 +31,7 @@
   "keywords": [],
   "author": "JonnyAdaptableTools",
   "license": "MIT",
-  "homepage": "https://github.com/AdaptableTools/example-adaptable-aggrid#readme",
+  "homepage": "https://github.com/AdaptableTools/support-template-adaptable-react-aggrid#readme",
   "devDependencies": {
     "prettier": "^2.7.1",
     "typescript": "4.9.5"
