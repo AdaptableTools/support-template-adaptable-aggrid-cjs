@@ -4,7 +4,7 @@ This is a very basic example of how to get started with AdapTable - the market-l
 
 This template is particularly useful if you wish to build a very small demo for Support purposes.
 
-It uses **vanilla** AdapTable - and not one of the Framework wrappers.
+It is written purely in TypeScript and does not one of the Framework wrappers.
 
 For full information on how to use AdapTable see the [AdapTable Documentation](https://docs.adaptabletools.com).
 
