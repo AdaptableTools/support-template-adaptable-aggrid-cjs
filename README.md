@@ -1,4 +1,4 @@
-# AdapTable (Vanilla) Support Template
+# AdapTable (Vanilla TypeScript) Support Template
 
 This is a very basic example of how to get started with AdapTable - the market-leading, low code AG Grid extension.
 
