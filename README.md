@@ -1,8 +1,9 @@
 # AdapTable CJS (Vanilla TypeScript) Support Template
 
-> For ESM (which is the recommended way to use AdapTable) see [Adaptable Vanilla TypeScript Support Template](https://github.com/AdaptableTools/support-template-adaptable-aggrid) 
 
-This is a very basic example of how to get started with AdapTable - the market-leading, low code AG Grid extension.
+This is a very basic example of how to get started with AdapTable - the market-leading, low code AG Grid extension using CommonJS.
+
+> For ESM (which is the **recommended way** to use AdapTable) see [Adaptable Vanilla TypeScript Support Template](https://github.com/AdaptableTools/support-template-adaptable-aggrid) 
 
 This template is particularly useful if you wish to build a very small demo for Support purposes.
 
@@ -62,7 +63,7 @@ to launch a webserver that serves the generated `dist` folder - now go to [local
 
 ## Licences
 
-An [AdapTable Licence](https://docs.adaptabletools.com/guide/licensing) provides access to all product features as well as quarterly updates and enhancements through the lifetime of the licence, comprehensive support, and access to all 3rd party libraries.
+An [AdapTable Licence](https://docs.adaptabletools.com/guide/licensing) provides access to all product features as well as regular updates and enhancements through the lifetime of the licence, comprehensive support, and access to all 3rd party libraries.
 
 Licences can be purchased individually, for a team, for an organisation or for integration into software for onward sale.
 
