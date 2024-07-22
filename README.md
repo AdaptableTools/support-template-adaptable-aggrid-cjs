@@ -8,8 +8,6 @@ This template is particularly useful if you wish to build a very small demo for 
 
 It is written purely in **TypeScript** and does not use one of the Framework wrappers.
 
-> A JavaScript only version will soon be available...
-
 For full information on how to use AdapTable see the [AdapTable Documentation](https://docs.adaptabletools.com).
 
 ## Versions and Dependencies
