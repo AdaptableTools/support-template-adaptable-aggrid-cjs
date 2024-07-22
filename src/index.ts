@@ -12,7 +12,7 @@ import { rowData } from './rowData';
 const adaptableOptions: AdaptableOptions = {
   primaryKey: 'id',
   userName: 'support user',
-  adaptableId: 'AdapTable Vanilla Support Template',
+  adaptableId: 'AdapTable Vanilla Support Template - CJS',
   predefinedConfig: {},
   userInterfaceOptions: {
     editLookUpItems: [
