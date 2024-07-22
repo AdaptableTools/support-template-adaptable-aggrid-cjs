@@ -1,10 +1,9 @@
-import { AdaptableOptions, AgGridConfig } from '@adaptabletools/adaptable/types';
-import Adaptable from '@adaptabletools/adaptable/agGrid';
-import { GridOptions, Module } from '@ag-grid-community/core';
+import { AdaptableOptions, AgGridConfig } from '@adaptabletools/adaptable-cjs/types';
+import Adaptable from '@adaptabletools/adaptable-cjs/agGrid';
+import { GridOptions } from 'ag-grid-community';
 
 import { columnDefs, defaultColDef } from './columnDefs';
 import { rowData } from './rowData';
-import { agGridModules } from './agGridModules';
 
 // Build the AdaptableOptions object and set primaryKey and adaptableId
 // In this example we are NOT creating any predefined config nor providing any Adaptable Options classes (e.g. filters, entitlements)
@@ -15,6 +14,13 @@ const adaptableOptions: AdaptableOptions = {
   userName: 'support user',
   adaptableId: 'AdapTable Vanilla Support Template',
   predefinedConfig: {},
+  userInterfaceOptions: {
+    editLookUpItems: [
+      {
+        scope: { ColumnIds: ['language'] },
+      },
+    ],
+  },
 };
 
 // Create an AG Grid GridOptions object with the Column Definitions and Row Data created above
@@ -26,8 +32,8 @@ const gridOptions: GridOptions = {
 
 // Create an AG Grid Config object which contains AG Grid Grid Options and Modules
 const agGridConfig: AgGridConfig = {
-  modules: agGridModules,
-  gridOptions: gridOptions,
+  modules: [],
+  gridOptions,
 };
 
 // Asynchronously instantiate AdapTable with Adaptable Options and AG Grid Config

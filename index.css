@@ -1,8 +1,8 @@
-@import '@ag-grid-community/styles/ag-grid.css';
-@import '@ag-grid-community/styles/ag-theme-alpine.css';
-@import '@adaptabletools/adaptable/base.css';
-@import '@adaptabletools/adaptable/themes/light.css';
-@import '@adaptabletools/adaptable/themes/dark.css';
+@import 'npm:ag-grid-enterprise/styles/ag-grid.css';
+@import 'npm:ag-grid-enterprise/styles/ag-theme-alpine.css';
+@import 'npm:@adaptabletools/adaptable-cjs/base.css';
+@import 'npm:@adaptabletools/adaptable-cjs/themes/light.css';
+@import 'npm:@adaptabletools/adaptable-cjs/themes/dark.css';
 
 :root {
   --ab__font-family: Helvetica;

@@ -1,4 +1,4 @@
-import { ColDef } from '@ag-grid-community/core';
+import { ColDef } from 'ag-grid-community';
 import { WebFramework } from './rowData';
 
 export const defaultColDef: ColDef = {
@@ -25,6 +25,7 @@ export const columnDefs: ColDef<WebFramework>[] = [
   {
     field: 'language',
     type: 'abColDefString',
+    editable: true,
     enablePivot: true,
     enableRowGroup: true,
   },
