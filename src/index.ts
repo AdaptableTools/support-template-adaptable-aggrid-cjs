@@ -12,15 +12,8 @@ import { rowData } from './rowData';
 const adaptableOptions: AdaptableOptions = {
   primaryKey: 'id',
   userName: 'support user',
-  adaptableId: 'AdapTable Vanilla Support Template - CJS',
+  adaptableId: 'AdapTable Support Template - CJS',
   predefinedConfig: {},
-  userInterfaceOptions: {
-    editLookUpItems: [
-      {
-        scope: { ColumnIds: ['language'] },
-      },
-    ],
-  },
 };
 
 // Create an AG Grid GridOptions object with the Column Definitions and Row Data created above
@@ -30,7 +23,7 @@ const gridOptions: GridOptions = {
   rowData,
 };
 
-// Create an AG Grid Config object which contains AG Grid Grid Options and Modules
+// Create an AG Grid Config object which contains AG Grid Grid Options and (for CJS only) an empty Modules array
 const agGridConfig: AgGridConfig = {
   modules: [],
   gridOptions,
