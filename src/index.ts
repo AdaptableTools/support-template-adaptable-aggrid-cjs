@@ -23,7 +23,7 @@ const gridOptions: GridOptions = {
   rowData,
 };
 
-// Create an AG Grid Config object which contains AG Grid Grid Options and (for CJS only) an empty Modules array
+// Create an AG Grid Config object which contains AG Grid's GridOptions and (for CJS only) an empty Modules array
 const agGridConfig: AgGridConfig = {
   modules: [],
   gridOptions,
