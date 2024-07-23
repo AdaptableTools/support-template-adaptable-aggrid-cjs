@@ -3,7 +3,7 @@
 
 This is a very basic example of how to get started with AdapTable - the market-leading, low code AG Grid extension using CommonJS.
 
-> For ESM (which is the **recommended way** to use AdapTable) see [Adaptable Vanilla TypeScript Support Template](https://github.com/AdaptableTools/support-template-adaptable-aggrid) 
+> For ESM (which is the **recommended way** to use AdapTable) see [Adaptable Vanilla Support Template](https://github.com/AdaptableTools/support-template-adaptable-aggrid) 
 
 This template is particularly useful if you wish to build a very small demo for Support purposes.
 
