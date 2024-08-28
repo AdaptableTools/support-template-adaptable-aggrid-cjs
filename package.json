@@ -8,10 +8,10 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json,html}\""
   },
   "dependencies": {
-    "@adaptabletools/adaptable-cjs": "^18.1.11",
-    "ag-grid-community": "31.3.2",
-    "ag-grid-enterprise": "31.3.2",
-    "parcel-bundler": "^1.12.4"
+    "@adaptabletools/adaptable-cjs": "^19.0.0",
+    "ag-grid-community": "^32.1.0",
+    "ag-grid-enterprise": "^32.1.0",
+    "parcel": "^2.12.0"
   },
   "keywords": [],
   "author": "JonnyAdaptableTools",

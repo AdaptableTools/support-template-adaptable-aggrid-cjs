@@ -2,8 +2,15 @@ import { AdaptableOptions, AgGridConfig } from '@adaptabletools/adaptable-cjs/ty
 import Adaptable from '@adaptabletools/adaptable-cjs/agGrid';
 import { GridOptions } from 'ag-grid-community';
 
+import 'ag-grid-enterprise/styles/ag-grid.css';
+import 'ag-grid-enterprise/styles/ag-theme-alpine.css';
+import '@adaptabletools/adaptable-cjs/base.css';
+import '@adaptabletools/adaptable-cjs/themes/light.css';
+import '@adaptabletools/adaptable-cjs/themes/dark.css';
+
 import { columnDefs, defaultColDef } from './columnDefs';
 import { rowData } from './rowData';
+import 'ag-grid-enterprise';
 
 // Build the AdaptableOptions object and set primaryKey and adaptableId
 // In this example we are NOT creating any predefined config nor providing any Adaptable Options classes (e.g. filters, entitlements)
