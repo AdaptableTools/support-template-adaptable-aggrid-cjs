@@ -1,6 +1,6 @@
 import { AdaptableOptions, AgGridConfig } from '@adaptabletools/adaptable-cjs/types';
 import Adaptable from '@adaptabletools/adaptable-cjs/agGrid';
-import { GridOptions } from 'ag-grid-community';
+import { GridOptions } from 'ag-grid-enterprise';
 
 import 'ag-grid-enterprise/styles/ag-grid.css';
 import 'ag-grid-enterprise/styles/ag-theme-alpine.css';
@@ -20,11 +20,56 @@ const adaptableOptions: AdaptableOptions = {
   primaryKey: 'id',
   userName: 'support user',
   adaptableId: 'AdapTable Support Template - CJS',
-  predefinedConfig: {},
+  predefinedConfig: {
+    Dashboard: {
+      Tabs: [
+        {
+          Name: 'Welcome',
+          Toolbars: ['Layout'],
+        },
+      ],
+    },
+    StatusBar: {
+      StatusBars: [
+        {
+          Key: 'Center Panel',
+          StatusBarPanels: ['Theme'],
+        },
+      ],
+    },
+    Layout: {
+      CurrentLayout: 'Standard Layout',
+      Layouts: [
+        {
+          Name: 'Standard Layout',
+          TableColumns: [
+            'name',
+            'language',
+            'github_stars',
+            'license',
+            'created_at',
+            'has_wiki',
+            'updated_at',
+            'pushed_at',
+            'github_watchers',
+            'open_issues_count',
+            'closed_issues_count',
+            'open_pr_count',
+            'closed_pr_count',
+            'description',
+            'has_projects',
+            'has_pages',
+            'week_issue_change',
+          ],
+        },
+      ],
+    },
+  },
 };
 
 // Create an AG Grid GridOptions object with the Column Definitions and Row Data created above
 const gridOptions: GridOptions = {
+  theme: 'legacy',
   defaultColDef,
   columnDefs,
   rowData,

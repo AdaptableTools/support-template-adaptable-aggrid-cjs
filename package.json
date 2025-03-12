@@ -8,9 +8,8 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json,html}\""
   },
   "dependencies": {
-    "@adaptabletools/adaptable-cjs": "~19.2.0",
-    "ag-grid-community": "~32.3.0",
-    "ag-grid-enterprise": "~32.3.0",
+    "@adaptabletools/adaptable-cjs": "~20.0.0-canary.13",
+    "ag-grid-enterprise": "~33.0.4",
     "parcel": "^2.12.0"
   },
   "keywords": [],
@@ -18,7 +17,7 @@
   "license": "MIT",
   "homepage": "https://github.com/AdaptableTools/support-template-adaptable-react-aggrid#readme",
   "devDependencies": {
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.8",
     "process": "^0.11.10",
     "typescript": "4.9.5"
   }
