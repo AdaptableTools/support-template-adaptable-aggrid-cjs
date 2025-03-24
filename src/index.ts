@@ -13,14 +13,13 @@ import { rowData } from './rowData';
 import 'ag-grid-enterprise';
 
 // Build the AdaptableOptions object and set primaryKey and adaptableId
-// In this example we are NOT creating any predefined config nor providing any Adaptable Options classes (e.g. filters, entitlements)
+// In this example we are NOT creating any Initial State (other than mandatory Layout) nor providing any Adaptable Options classes (e.g. filters, entitlements)
 // However in the real world you will set up AdapTable Options to fit your requirements and configure your permissions and remote State
-// You will also provide Predefined Config so that AdapTable ships for first time use with your required objects
 const adaptableOptions: AdaptableOptions = {
   primaryKey: 'id',
   userName: 'support user',
   adaptableId: 'AdapTable Support Template - CJS',
-  predefinedConfig: {
+  initialState: {
     Dashboard: {
       Tabs: [
         {
