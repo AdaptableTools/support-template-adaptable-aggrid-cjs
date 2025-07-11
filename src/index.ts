@@ -10,7 +10,8 @@ import '@adaptabletools/adaptable-cjs/themes/dark.css';
 
 import { columnDefs, defaultColDef } from './columnDefs';
 import { rowData } from './rowData';
-import 'ag-grid-enterprise';
+
+import { agGridModules } from './agGridModules';
 
 // Build the AdaptableOptions object and set primaryKey and adaptableId
 // In this example we are NOT creating any Initial State (other than mandatory Layout) nor providing any Adaptable Options classes (e.g. filters, entitlements)
@@ -77,7 +78,7 @@ const gridOptions: GridOptions = {
 // Create an AG Grid Config object which contains AG Grid's GridOptions object
 // Because this is CJS we pass in an empty array for the modules peroperty
 const agGridConfig: AgGridConfig = {
-  modules: [],
+  modules: agGridModules,
   gridOptions,
 };
 
