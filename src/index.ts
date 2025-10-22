@@ -1,9 +1,7 @@
 import { AdaptableOptions, AgGridConfig } from '@adaptabletools/adaptable-cjs/types';
 import Adaptable from '@adaptabletools/adaptable-cjs/agGrid';
-import { GridOptions } from 'ag-grid-enterprise';
+import { GridOptions, themeQuartz } from 'ag-grid-enterprise';
 
-import 'ag-grid-enterprise/styles/ag-grid.css';
-import 'ag-grid-enterprise/styles/ag-theme-alpine.css';
 import '@adaptabletools/adaptable-cjs/base.css';
 import '@adaptabletools/adaptable-cjs/themes/light.css';
 import '@adaptabletools/adaptable-cjs/themes/dark.css';
@@ -69,7 +67,7 @@ const adaptableOptions: AdaptableOptions = {
 
 // Create an AG Grid GridOptions object with the Column Definitions and Row Data created above
 const gridOptions: GridOptions = {
-  theme: 'legacy',
+  theme: themeQuartz,
   defaultColDef,
   columnDefs,
   rowData,
