@@ -1,9 +1,7 @@
-import { AdaptableOptions, AgGridConfig } from '@adaptabletools/adaptable-cjs/types';
-import Adaptable from '@adaptabletools/adaptable-cjs/agGrid';
+import { Adaptable, AdaptableOptions, AgGridConfig } from '@adaptabletools/adaptable-cjs';
 import { GridOptions, themeQuartz } from 'ag-grid-enterprise';
 
-import '@adaptabletools/adaptable-cjs/base.css';
-import '@adaptabletools/adaptable-cjs/themes/light.css';
+import '@adaptabletools/adaptable-cjs/index.css';
 import '@adaptabletools/adaptable-cjs/themes/dark.css';
 
 import { columnDefs, defaultColDef } from './columnDefs';

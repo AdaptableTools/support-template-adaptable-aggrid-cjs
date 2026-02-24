@@ -1,15 +1,15 @@
 {
-  "name": "support-template-adaptable-aggrid",
+  "name": "support-template-adaptable-aggrid-cjs",
   "version": "1.0.0",
   "description": "AdapTable Support Template",
   "scripts": {
-    "dev": "parcel --no-source-maps index.html",
+    "dev": "parcel --no-source-maps --no-cache index.html",
     "build": "parcel build --no-source-maps index.html --no-optimize",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json,html}\""
   },
   "dependencies": {
-    "@adaptabletools/adaptable-cjs": "21.0.8",
-    "ag-grid-enterprise": "34.0.2"
+    "@adaptabletools/adaptable-cjs": "~22.0.0",
+    "ag-grid-enterprise": "35.0.1"
   },
   "keywords": [],
   "author": "JonnyAdaptableTools",
