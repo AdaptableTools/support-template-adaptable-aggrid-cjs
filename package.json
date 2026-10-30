@@ -8,12 +8,15 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md,json,html}\""
   },
   "dependencies": {
-    "@adaptabletools/adaptable-cjs": "23.1.0",
+    "@adaptabletools/adaptable-cjs": "24.0.0",
     "ag-grid-enterprise": "36.2.0"
   },
   "keywords": [],
   "author": "JonnyAdaptableTools",
   "license": "MIT",
+  "@parcel/resolver-default": {
+    "packageExports": true
+  },
   "homepage": "https://github.com/AdaptableTools/support-template-adaptable-react-aggrid#readme",
   "devDependencies": {
     "parcel": "2.15.4",
